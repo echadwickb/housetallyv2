@@ -1,0 +1,5 @@
+{{#if loggedIn}}
+<i class="icon-user icon-white"></i> <span class="hidden-phone">{{email}}</span> <a href="{{logoutUrl}}">Log Out</a>
+{{else}}
+<a href="{{loginUrl}}"><i class="icon-user"></i><span class="hidden-phone"> HoH</span> Log In</a>
+{{/if}}

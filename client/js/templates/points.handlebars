@@ -1,0 +1,31 @@
+<div class="modal">
+	<div class="modal-header">
+		<h3>{{points.name}} House</h3>
+	</div>
+	<div class="modal-body">
+	    <form class="form-horizontal">
+	        <div class="control-group">
+                <label class="control-label" for="points">Points</label>
+                <div class="controls">
+                    <input type="number" class="input-small points-input" required name="points" value="{{points.points}}" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="category1">{{category1}}</label>
+                <div class="controls">
+                    <select name="category1" required class="category1">{{#each categories1}}<option value="{{this}}">{{this}}</option>{{/each}}</select>
+                </div>
+            </div>
+			<div class="control-group">
+                <label class="control-label" for="category2">{{category2}}</label>
+                <div class="controls">
+                    <select name="category2" required class="category2">{{#each categories2}}<option value="{{category2}}">{{category2}}</option>{{/each}}</select>
+                </div>
+            </div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</a>
+    	<a href="#" class="btn btn-primary update-points" data-dismiss="modal">Update</a>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<li class="active">
+    <a href="#tallies" title="House Totals" class="tallies"><i class="icon-th-large icon-white"></i><span class="hidden-phone"> Tallies</span></a>
+</li>
+<li><a href="#stats" title="Trends" class="stats"><i class="icon-tasks icon-white"></i><span class="hidden-phone"> Stats</span></a></li>
+{{#if hasAdmin}}
+<li class="dropdown hidden-phone">
+    <a href="#" title="House Tally Configuration" class="dropdown-toggle config" data-toggle="dropdown"><i class="icon-wrench icon-white"></i><span class="hidden-phone"> Config<b class="caret"></b></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="#config/setting"><i class="icon-wrench"></i>&nbsp;App Settings</a></li>
+        <li><a href="#config/user"><i class="icon-user"></i>&nbsp;Users</a></li>
+        <li><a href="#config/category"><i class="icon-tag"></i>&nbsp;Categories</a></li>
+        <li><a href="#config/house"><i class="icon-home"></i>&nbsp;Houses</a></li>
+    </ul>
+</li>
+{{/if}}

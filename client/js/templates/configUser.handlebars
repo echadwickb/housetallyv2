@@ -1,0 +1,15 @@
+<td>
+    <button class="btn btn-mini edit display-mode" title="Edit User"><i class="icon-edit"></i></button>
+    <button class="btn btn-mini btn-danger remove display-mode" title="Delete User"><i class="icon-trash icon-white"></i></button>
+    <button class="btn btn-mini btn-success save edit-mode">Save</button>
+    <button class="btn btn-mini cancel edit-mode">Cancel</button>
+</td>
+<td>
+    <span class="display-mode">{{email}}</span>
+    <input type="email" name="email" type="email" required class="email input-xlarge edit-mode" value="{{email}}" /></td>
+<td class="checkbox-centered">
+    {{#if admin}}
+    <i class="icon-ok display-mode"></i>
+    {{/if}}
+    <input type="checkbox" name="admin" class="admin edit-mode" value="true" {{#if admin}} checked="checked" {{/if}} />
+</td>

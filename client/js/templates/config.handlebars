@@ -1,0 +1,14 @@
+<h2>{{header}}</h2>
+<p class="text-info">{{info}}</p>
+<table class="table table-striped table-bordered">
+    <thead><tr>
+        <th></th>
+        {{#each columns}}
+            <th>{{this.name}}</th>
+        {{/each}}
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+</table>
+<p><button class="btn btn-primary btn-small add"><i class="icon-plus icon-white"></i> Add</button></p>
